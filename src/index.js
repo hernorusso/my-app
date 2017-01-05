@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 
 const store = configureStore();
 
-render.render(
+render(
   <Provider store={store}>
     <App />
   </Provider>,

@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import TodoList from '../TodoList/TodoList'
+import TodoListContainer from '../../containers/todoListContainer/todoListContainer'
+import AddTodo from '../../containers/addTodo/addTodo';
 
 const App = () => (
       <div className="App">
@@ -12,7 +13,8 @@ const App = () => (
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <TodoList/>
+        < AddTodo />
+        <TodoListContainer />
       </div>
     );
 
