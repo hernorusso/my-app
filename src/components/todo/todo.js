@@ -12,7 +12,7 @@ id
       Show
     </Link>
     &nbsp;
-    <Link to={id + '/edit'}>
+    <Link to={'/edit/' + id}>
       Edit
     </Link>
   </li>

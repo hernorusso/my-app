@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ShowSingleItem = ({item}) => (
+const EditSingleItem = ({item}) => (
   <div>
     <h1>
       {item.text}
@@ -11,4 +11,4 @@ const ShowSingleItem = ({item}) => (
   </div>
 );
 
-export default ShowSingleItem;
+export default EditSingleItem;
