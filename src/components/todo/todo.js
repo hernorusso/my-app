@@ -1,13 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Todo = ({
-  onClick,
-  text
+text,
+id
 }) => (
-  <li 
-    onClick={onClick}
-  >
+  <li>
     {text}
+    &nbsp;
+    <Link to={id}>
+      Show
+    </Link>
+    &nbsp;
+    <Link to={id + '/edit'}>
+      Edit
+    </Link>
   </li>
 );
 
