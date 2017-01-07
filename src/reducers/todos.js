@@ -1,5 +1,11 @@
-const removeTodoFromState = (state, action) =>
-  state.filter(t => t.id !== action.id);
+const removeTodoFromState = (state, action, cb) => {
+  return state.map(t => {
+      if(t.id === action.id) {
+        return cb(undefined, action);
+      }
+      return t;
+    }
+  )};
 
 const todo = (state, action) => {
   switch (action.type) {
@@ -29,8 +35,7 @@ const todos = (state = [], action) => {
       ];
     case 'UPDATE_TODO':
       return [
-        ...removeTodoFromState(state, action),
-        todo(undefined, action)
+        ...removeTodoFromState(state, action, todo),
       ];
     default:
       return state;

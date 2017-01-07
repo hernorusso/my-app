@@ -14,8 +14,7 @@ let EditForm = ({ dispatch, item, params }) => {
           return;
         }
         dispatch(updateTodo(input.value, desc.value, params.id));
-        input.value = '';
-        desc.value = '';
+        window.alert('Item Updated!')
       }}>
         <input
           ref={node => {
