@@ -1,10 +1,10 @@
 import React from 'react';
 // import './ShowItem.css';
-  import EditItemContainer from '../../containers/editItemContainer.js'
+import EditForm from '../../containers/editForm.js'
 
-const EditItem = ({ params }) => (
+const EditItem = () => (
   <div className='show-item'>
-   <EditItemContainer id={params.id}/>
+   <EditForm />
   </div>
 );
 

@@ -6,3 +6,10 @@ export const addTodo = (text, desc) => ({
   text,
   desc
 });
+
+export const updateTodo = (text, desc, id) => ({
+  type: 'UPDATE_TODO',
+  id,
+  text,
+  desc
+});
